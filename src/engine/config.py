@@ -13,3 +13,6 @@ EXECUTION_MODE=os.getenv('EXECUTION_MODE','paper').lower()
 ENABLE_LIVE_EXECUTION=os.getenv('ENABLE_LIVE_EXECUTION','false').lower()=='true'
 LIVE_POLL_SECONDS=int(os.getenv('LIVE_POLL_SECONDS','30'))
 MIN_EDGE=float(os.getenv('MIN_EDGE','0.03'))
+GOALDIR_API_KEY=os.getenv('GOALDIR_API_KEY','').strip()
+GOALDIR_BASE_URL=os.getenv('GOALDIR_BASE_URL','https://sports.bzzoiro.com').strip().rstrip('/')
+GOALDIR_PREDICTION_PATH=os.getenv('GOALDIR_PREDICTION_PATH','').strip()
