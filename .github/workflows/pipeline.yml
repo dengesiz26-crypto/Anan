@@ -15,3 +15,13 @@ jobs:
       - run: python -m src.engine.cli ingest
       - run: python -m src.engine.cli train
       - run: python -m src.engine.cli backtest
+      - name: Pre-match predictions (goaldir / Bzzoiro API)
+        env:
+          GOALDIR_API_KEY: ${{ secrets.GOALDIR_API_KEY }}
+        run: python -m src.engine.cli predict --today
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: predictions
+          path: data/reports/predictions.json
+          if-no-files-found: ignore
