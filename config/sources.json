@@ -1,0 +1,25 @@
+{
+  "historical_primary": {
+    "name": "football-prediction-ml processed data",
+    "repo": "https://github.com/zakariae-boui/football-prediction-ml",
+    "reason": "ready-to-use processed match data; upstream documents football-data.co.uk + Understat and chronological leakage-safe features",
+    "license_check_required": true
+  },
+  "research_event_data": {
+    "name": "StatsBomb Open Data",
+    "repo": "https://github.com/hudl/open-data",
+    "license_check_required": true
+  },
+  "research_events_odds": {
+    "name": "Football Events",
+    "kaggle": "https://www.kaggle.com/secareanualin/football-events",
+    "license_check_required": true
+  },
+  "live": {
+    "api_football": "https://www.api-football.com/",
+    "odds_api_io": "https://odds-api.io/"
+  },
+  "future_execution": {
+    "betfair": "https://github.com/betcode-org/betfair"
+  }
+}
