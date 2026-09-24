@@ -49,7 +49,7 @@ class GoaldirAPI:
 
     # --- mac bazli ---
     def event(self, event_id):
-        return self.get(f'api/v2/events/{event_id}/_id}/')
+        return self.get(f'api/v2/events/{event_id}/')
 
     def prediction(self, event_id):
         paths = [GOALDIR_PREDICTION_PATH] if GOALDIR_PREDICTION_PATH else PREDICTION_CANDIDATES
