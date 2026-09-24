@@ -17,7 +17,17 @@
   },
   "live": {
     "api_football": "https://www.api-football.com/",
-    "odds_api_io": "https://odds-api.io/"
+    "odds_api_io": "https://odds-api.io/",
+    "goaldir": {
+      "name": "goaldir.com / Bzzoiro Sports Data (free)",
+      "docs": "https://goaldir.com/docs",
+      "register": "https://sports.bzzoiro.com/register/",
+      "auth": "Authorization: Token <key>",
+      "endpoints": [
+        "api/v2/events/",
+        "api/v2/events/live/"
+      ]
+    }
   },
   "future_execution": {
     "betfair": "https://github.com/betcode-org/betfair"
